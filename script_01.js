@@ -1,10 +1,16 @@
 /* Die Satzbau-Maschine | Arrays */
 
+// Modul: Ausgabe in Konsole | Test:
+//ausgabe("hi");
+function ausgabe(outputStr) {
+    console.log(outputStr);
+}
+
 
 /*** 01. Funktionalität mit Einzelparametern */
 // --> "Ich bin Max Mütze."
 
-let arr;
+//let arr;
 // //arr = new Array(); // Konstruktor
 // arr = []; // Literal
 // arr = [2,6,7,12];
@@ -28,8 +34,7 @@ function getSentence(word1, word2, word3, word4) {
 // Kritik |Überlegung
 // -> word1, word2, ..., wordX ----> Semantische Struktur
 // -> Arr0, Arr1, ..., ArrX --> Numerische Struktur
-
-ausgabe(getSentenceArr(["Ich","bin","Max","Mütze"])); // Test
+//ausgabe(getSentenceArr(["Ich","bin","Max","Mütze"])); // Test
 function getSentenceArr(arr) {
     let gap = " ";
     let punct = ".";
@@ -39,8 +44,18 @@ function getSentenceArr(arr) {
 }
 
 
-// Modul: Ausgabe in Konsole | Test:
-//ausgabe("hi");
-function ausgabe(outputStr) {
-    console.log(outputStr);
+/***** 03. For-Schleife *****/
+// Wiederholungsstrucktur
+let arr= ["Ich","bin","Max","Mütze"]
+for (let i = 0; i < arr.length; i++) { // i++ -> Inkrement | i-- Dekrement
+ausgabe(arr[i]);
 }
+
+function getSentenceArr(arr) {
+    let gap = " ";
+    let punct = ".";
+    let str = arr[0] + gap + arr[1] + gap + arr[2] + gap + arr[3] + punct;
+
+    return str;
+}
+
