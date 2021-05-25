@@ -4,7 +4,19 @@
 /*** 01. Funktionalität mit Einzelparametern */
 // --> "Ich bin Max Mütze."
 
-ausgabe(getSentence("Ich","bin","Max","Mütze")); // Test
+let arr;
+//arr = new Array(); // Konstruktor
+arr = []; // Literal
+arr = [2,6,7,12];
+arr= [true,false,true,];
+arr= ["Ich","bin","Max","Mütze"]
+ausgabe (arr);
+ausgabe (arr.length); // Länge
+ausgabe (arr[0]); // Index, beginnt immer mit 0
+ausgabe (arr[1]);
+
+
+//ausgabe(getSentence("Ich","bin","Max","Mütze")); // Test
 function getSentence(word1, word2, word3, word4) {
     let gap = " ";
     let punct = ".";
